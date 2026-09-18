@@ -136,3 +136,16 @@ article>* {
 p {
 	--flow-space: 2em;
 }
+
+.flex {
+	display: flex;
+}
+
+.instruction {
+	background-color: aliceblue;
+	width: fit-content;
+}
+
+.just-cont {
+	justify-content: center;
+}
