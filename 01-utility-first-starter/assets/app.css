@@ -18,7 +18,7 @@
     --color-paper: #f0eee3;
     --color-ink: #16220e;
     --color-link: #0b5c2a;
-    --color-ink-deep: ;
+    --color-ink-deep: #0b5c2a;
     --color-on-dark: #f0eee3;
     --color-lime: #d8f16b;
     --text-display: clamp(2.5rem, 1.6rem + 4vw, 5rem);
@@ -304,8 +304,14 @@
     color: var(--color-ink);
   }
   @media (hover: hover) {
+    .hover\:border-ink-deep:hover {
+      border-color: var(--color-ink-deep);
+    }
     .hover\:border-link:hover {
       border-color: var(--color-link);
+    }
+    .hover\:bg-ink-deep:hover {
+      background-color: var(--color-ink-deep);
     }
     .hover\:bg-link:hover {
       background-color: var(--color-link);
