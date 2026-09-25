@@ -15,6 +15,8 @@
   --color-pink: #f7c2dd;
   --color-on-light: #16220e;
   --color-on-dark: #f0eee3;
+  --row-flow: row wrap;
+
 }
 
 :root {
