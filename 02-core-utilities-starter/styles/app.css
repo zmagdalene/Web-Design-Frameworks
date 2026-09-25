@@ -9,13 +9,12 @@
 
   --color-paper: #f0eee3;
   --color-ink: #16220e;
-  --color-link: #0b5c2a;
-  --color-ink-deep: #0b5c2a;
-  --color-on-dark: #f0eee3;
-  --color-lime: #d8f16b;
+  --color-ink-deep: #0a2107;
   --color-green: #54d98c;
-
-  --text-display: clamp(2.5rem, 1.6rem + 4vw, 5rem);
+  --color-lime: #d8f16b;
+  --color-pink: #f7c2dd;
+  --color-on-light: #16220e;
+  --color-on-dark: #f0eee3;
 }
 
 :root {
