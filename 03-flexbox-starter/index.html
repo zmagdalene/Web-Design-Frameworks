@@ -23,18 +23,18 @@
          by block. That's what Flexbox is for. -->
 
     <header>
-      <div class="font-bold">
-        <a href="index.html">
-          <span aria-hidden="true"></span>
+      <div class="flex flex-wrap justify-center items-center font-extrabold whitespace-nowrap">
+        <a class="text-2xl flex items-center gap-2" href="index.html">
+          <span aria-hidden="true" class="block w-[20px] h-[20px] rounded-full bg-green "></span>
           Compass
         </a>
-        <nav aria-label="Primary">
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="find-support-services.html">Find support services</a>
-          <a href="student-stories.html">Student stories</a>
-          <a href="accommodations-faq.html">Accommodations FAQ</a>
-          <a href="events.html">Events &amp; drop-ins</a>
-          <a href="request-support.html">Request support</a>
+        <nav class="flex gap-4 p-4 text-on-light" aria-label="Primary">
+          <a href="index.html" class="hover:underline active:decoration-ink decoration-(length:--rule) underline-offset-[.25em] decoration-green" aria-current="page">Home</a>
+          <a href="find-support-services.html" class="hover:underline active:decoration-ink decoration-(length:--rule) underline-offset-[.25em] decoration-green">Find support services</a>
+          <a href="student-stories.html" class="hover:underline active:decoration-ink decoration-(length:--rule) underline-offset-[.25em] decoration-green">Student stories</a>
+          <a href="accommodations-faq.html" class="hover:underline active:decoration-ink decoration-(length:--rule) underline-offset-[.25em] decoration-green">Accommodations FAQ</a>
+          <a href="events.html" class="hover:underline active:decoration-ink decoration-(length:--rule) underline-offset-[.25em] decoration-green">Events &amp; drop-ins</a>
+          <a href="request-support.html" class=" text-link hover:underline active:decoration-ink decoration-(length:--rule) underline-offset-[.25em] decoration-green">Request support</a>
         </nav>
       </div>
     </header>
@@ -45,9 +45,9 @@
            the one thing that's new: the icon still sits inline next to its
            label instead of stacked above it, because nothing here is
            flex yet. -->
-      <ul class="list-none border-t-(length:--rule) border-ink pl-0 flex ">
+      <ul class="list-none border-t-(length:--rule) border-ink pl-0 flex">
         <li
-          class="border-b-(length:--rule) border-ink bg-lime p-8 text-center text-on-light"
+          class="flex flex-col items-center border-b-(length:--rule) border-ink bg-lime p-8 text-center text-on-light"
         >
           <svg
             class="h-14 w-14"
@@ -69,7 +69,7 @@
           <span class="font-display text-lg font-bold">Study skills</span>
         </li>
         <li
-          class="border-b-(length:--rule) border-ink bg-ink-deep p-8 text-center text-on-dark"
+          class="flex flex-col items-center border-b-(length:--rule) border-ink bg-ink-deep p-8 text-center text-on-dark"
         >
           <svg
             class="h-14 w-14"
@@ -90,7 +90,7 @@
           >
         </li>
         <li
-          class="border-b-(length:--rule) border-ink bg-green p-8 text-center text-on-light"
+          class="flex flex-col items-center border-b-(length:--rule) border-ink bg-green p-8 text-center text-on-light"
         >
           <svg
             class="h-14 w-14"
@@ -109,7 +109,7 @@
           <span class="font-display text-lg font-bold">Wellbeing</span>
         </li>
         <li
-          class="border-b-(length:--rule) border-ink bg-pink p-8 text-center text-on-light"
+          class="flex flex-col items-center border-b-(length:--rule) border-ink bg-pink p-8 text-center text-on-light"
         >
           <svg
             class="h-14 w-14"
@@ -133,57 +133,57 @@
       <form aria-labelledby="filter-heading" method="get" action="#">
         <h2 id="filter-heading">Filter services</h2>
 
-        <div>
-          <fieldset>
-            <legend>Category</legend>
-            <label
+        <div class="flex gap-4">
+          <fieldset class="flex flex-col border border-(length:--rule) border-t-[4px] border-t-green p-4">
+            <legend class="font-bold bg-green px-3 py-1 rounded-full font-display text-base">Category</legend>
+            <label class="flex gap-2 items-center px-3 py-1.5 cursor-pointer border-ink order border-(length:--rule) rounded-full font-normal transition-colors duration-120 hover:bg-lime hover:text-on-light has-checked:bg-ink-deep has-checked:text-on-dark has-checked:border-ink-deep"
               ><input type="checkbox" name="category" value="study-skills" />
               Study skills</label
             >
-            <label
+            <label class="flex gap-2 items-center px-3 py-1.5 cursor-pointer border border-ink border-(length:--rule) rounded-full font-normal transition-colors duration-120 hover:bg-lime hover:text-on-light has-checked:bg-ink-deep has-checked:text-on-dark has-checked:border-ink-deep"
               ><input type="checkbox" name="category" value="assistive-tech" />
               Assistive technology</label
             >
-            <label
+            <label class="flex gap-2 items-center px-3 py-1.5 cursor-pointer border border-ink border-(length:--rule) rounded-full font-normal transition-colors duration-120 hover:bg-lime hover:text-on-light has-checked:bg-ink-deep has-checked:text-on-dark has-checked:border-ink-deep"
               ><input type="checkbox" name="category" value="wellbeing" />
               Wellbeing</label
             >
-            <label
+            <label class="flex gap-2 items-center px-3 py-1.5 cursor-pointer border border-ink border-(length:--rule) rounded-full font-normal transition-colors duration-120 hover:bg-lime hover:text-on-light has-checked:bg-ink-deep has-checked:text-on-dark has-checked:border-ink-deep"
               ><input type="checkbox" name="category" value="financial" />
               Financial</label
             >
-            <label
+            <label class="flex gap-2 items-center px-3 py-1.5 cursor-pointer border border-ink border-(length:--rule) rounded-full font-normal transition-colors duration-120 hover:bg-lime hover:text-on-light has-checked:bg-ink-deep has-checked:text-on-dark has-checked:border-ink-deep"
               ><input type="checkbox" name="category" value="social" /> Social
               &amp; peer</label
             >
           </fieldset>
 
-          <fieldset>
-            <legend>Format</legend>
-            <label
+          <fieldset class="flex flex-col border border-(length:--rule) border-t-[4px] border-t-lime p-4">
+            <legend class="font-bold bg-lime px-3 py-1 rounded-full font-display text-base">Format</legend>
+            <label class="flex gap-2 items-center px-3 py-1.5 cursor-pointer border-ink order border-(length:--rule) rounded-full font-normal transition-colors duration-120 hover:bg-lime hover:text-on-light has-checked:bg-ink-deep has-checked:text-on-dark has-checked:border-ink-deep"
               ><input type="checkbox" name="format" value="in-person" /> In
               person</label
             >
-            <label
+            <label class="flex gap-2 items-center px-3 py-1.5 cursor-pointer border border-ink border-(length:--rule) rounded-full font-normal transition-colors duration-120 hover:bg-lime hover:text-on-light has-checked:bg-ink-deep has-checked:text-on-dark has-checked:border-ink-deep"
               ><input type="checkbox" name="format" value="online" />
               Online</label
             >
-            <label
+            <label class="flex gap-2 items-center px-3 py-1.5 cursor-pointer border border-ink border-(length:--rule) rounded-full font-normal transition-colors duration-120 hover:bg-lime hover:text-on-light has-checked:bg-ink-deep has-checked:text-on-dark has-checked:border-ink-deep"
               ><input type="checkbox" name="format" value="email" />
               Email</label
             >
           </fieldset>
 
-          <fieldset>
-            <legend>Campus</legend>
-            <label
+          <fieldset class="flex flex-col border border-(length:--rule) border-t-[4px] border-t-pink p-4">
+            <legend class="font-bold bg-pink px-3 py-1 rounded-full font-display text-base">Campus</legend>
+            <label class="flex gap-2 items-center px-3 py-1.5 cursor-pointer border-ink order border-(length:--rule) rounded-full font-normal transition-colors duration-120 hover:bg-lime hover:text-on-light has-checked:bg-ink-deep has-checked:text-on-dark has-checked:border-ink-deep"
               ><input type="checkbox" name="campus" value="city" /> City</label
             >
-            <label
+            <label class="flex gap-2 items-center px-3 py-1.5 cursor-pointer border border-ink border-(length:--rule) rounded-full font-normal transition-colors duration-120 hover:bg-lime hover:text-on-light has-checked:bg-ink-deep has-checked:text-on-dark has-checked:border-ink-deep"
               ><input type="checkbox" name="campus" value="riverside" />
               Riverside</label
             >
-            <label
+            <label class="flex gap-2 items-center px-3 py-1.5 cursor-pointer border border-ink border-(length:--rule) rounded-full font-normal transition-colors duration-120 hover:bg-lime hover:text-on-light has-checked:bg-ink-deep has-checked:text-on-dark has-checked:border-ink-deep"
               ><input type="checkbox" name="campus" value="online-only" />
               Online only</label
             >
@@ -196,7 +196,7 @@
          gap-x-*/gap-y-*. Nothing here has a class yet either. -->
     <footer>
       <nav aria-label="Footer">
-        <ul>
+        <ul class="flex gap-x-8 font-bold text-link whitespace-nowrap">
           <li>
             <a href="find-support-services.html">Find support services</a>
           </li>
