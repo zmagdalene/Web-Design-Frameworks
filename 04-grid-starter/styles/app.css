@@ -17,6 +17,9 @@
   --color-on-light: #16220e;
   --color-on-dark: #f0eee3;
 
+  --color-shopify-black: #02090a;
+  --color-shopify-on-dark: #ffffff;
+
   /* Same mechanism as --text-display from week 1: a clamp()ed size,
      available as the text-h2 utility. Week 7 covers writing your own. */
   --text-display: clamp(2.5rem, 1.6rem + 4vw, 5rem);
