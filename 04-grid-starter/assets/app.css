@@ -252,17 +252,14 @@
   .h-80 {
     height: calc(var(--spacing) * 80);
   }
+  .h-\[593px\] {
+    height: 593px;
+  }
   .w-9 {
     width: calc(var(--spacing) * 9);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
-  }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
-  }
-  .w-50 {
-    width: calc(var(--spacing) * 50);
   }
   .w-60 {
     width: calc(var(--spacing) * 60);
@@ -309,6 +306,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .content-center {
+    align-content: center;
+  }
   .items-center {
     align-items: center;
   }
@@ -330,12 +330,6 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
-  .self-center {
-    align-self: center;
-  }
-  .rounded {
-    border-radius: 0.25rem;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -344,10 +338,6 @@
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
-  }
-  .rounded-l {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -403,29 +393,14 @@
   .bg-transparent {
     background-color: transparent;
   }
-  .bg-\[url\(\.\.\/images\/shopify_full_bg\.png\)\] {
-    background-image: url(../images/shopify_full_bg.png);
+  .bg-cover {
+    background-size: cover;
   }
-  .bg-\[url\(\/images\/shopify_full_bg\.png\)\] {
-    background-image: url(/images/shopify_full_bg.png);
+  .bg-center {
+    background-position: center;
   }
-  .bg-\[url\(\/images\/shopify_full_bg\.webp\)\] {
-    background-image: url(/images/shopify_full_bg.webp);
-  }
-  .bg-\[url\(\/img\/mountains\.jpg\)\] {
-    background-image: url(/img/mountains.jpg);
-  }
-  .bg-\[url\(\\images\\shopify_full_bg\.png\)\] {
-    background-image: url(\images\shopify_full_bg.png);
-  }
-  .bg-\[url\(images\/shopify_full_bg\.webp\)\] {
-    background-image: url(images/shopify_full_bg.webp);
-  }
-  .bg-\[url\(images\\shopify_full_bg\.png\)\] {
-    background-image: url(images\shopify_full_bg.png);
-  }
-  .p-1 {
-    padding: var(--spacing);
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -485,10 +460,6 @@
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
-  .text-lg {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
-  }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -515,10 +486,6 @@
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
     line-height: var(--leading-relaxed);
-  }
-  .font-\[3rem\] {
-    --tw-font-weight: 3rem;
-    font-weight: 3rem;
   }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
