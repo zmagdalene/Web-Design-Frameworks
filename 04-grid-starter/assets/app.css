@@ -252,6 +252,9 @@
   .h-80 {
     height: calc(var(--spacing) * 80);
   }
+  .h-\[593px\] {
+    height: 593px;
+  }
   .w-9 {
     width: calc(var(--spacing) * 9);
   }
@@ -402,6 +405,18 @@
   .bg-transparent {
     background-color: transparent;
   }
+<<<<<<< HEAD
+=======
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+>>>>>>> 9d49bae83c6c845a07bb48c55c1bf49d50ef4a73
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
