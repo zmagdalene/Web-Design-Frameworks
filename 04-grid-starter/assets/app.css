@@ -264,6 +264,18 @@
   .w-60 {
     width: calc(var(--spacing) * 60);
   }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
+  .w-355 {
+    width: calc(var(--spacing) * 355);
+  }
+  .w-auto {
+    width: auto;
+  }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
   }
@@ -393,6 +405,8 @@
   .bg-transparent {
     background-color: transparent;
   }
+<<<<<<< HEAD
+=======
   .bg-cover {
     background-size: cover;
   }
@@ -402,11 +416,15 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
+>>>>>>> 9d49bae83c6c845a07bb48c55c1bf49d50ef4a73
   .p-2 {
     padding: calc(var(--spacing) * 2);
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
