@@ -5,6 +5,7 @@
 @theme {
   --font-display: "Inter", sans-serif;
 
+  --text-display: 80px;
   --text-h1: 58.1px;
   --text-h2: 37.6px;
   --text-h3: 30.3px;
@@ -21,17 +22,17 @@
 
   h1 {
     font-size: var(--text-h1);
-    font-weight: 600;
+    font-weight: 300;
   }
 
   h2 {
     font-size: var(--text-h2);
-    font-weight: 600;
+    font-weight: 300;
   }
 
   h3 {
     font-size: var(--text-h3);
-    font-weight: 600;
+    font-weight: 300;
   }
 
   button {
@@ -39,6 +40,12 @@
     font-weight: 600;
   }
 }
+
+@custom-variant theme-light (&:where([data-theme="light"] *));
+
+@custom-variant theme-dark (&:where([data-theme="dark"] *));
+
+@custom-variant theme-contrast (&:where([data-theme="contrast"] *));
 
 @theme {
   --color-background: #e5efff;
@@ -48,35 +55,23 @@
   --color-primary: #2172f3;
   --color-primary-dark: #005df0;
   --color-primary-light: rgba(156, 194, 255, 0.50);
-  --color-accent: #f0b44d;
+  --color-accent: #FA6400;
   --color-border: #d5dce5;
   --color-text: #000000;
   --color-text-muted: #262a30;
-  --color-background: #ffffff;
-  --color-surface: #363636;
-  --color-foreground: #ffffff;
-  --color-muted-foreground: #ffffff;
-  --color-primary: #ffffff;
-  --color-primary-dark: #ffffff;
-  --color-primary-light: #ffffff;
-  --color-accent: #ffffff;
-  --color-border: #ffffff;
-  --color-text-muted: #ffffff;
+  --color-black: #000000;
+  --color-text-white: #ffffff;
 
-  --spacing-space-3: 16;
-  --spacing-space-4: 24;
-  --spacing-space-5: 32;
-  --spacing-space-6: 40;
-  --spacing-space-7: 48;
-  --spacing-space-8: 64;
-  --spacing-space-9: 80;
-  --spacing-space-10: 96;
-
-  @custom-variant theme-light (&:where([data-theme="light"] *));
-
-  @custom-variant theme-dark (&:where([data-theme="dark"] *));
-
-  @custom-variant theme-contrast (&:where([data-theme="contrast"] *));
+  --spacing-space-1: 4px;
+  --spacing-space-2: 8px;
+  --spacing-space-3: 16px;
+  --spacing-space-4: 24px;
+  --spacing-space-5: 32px;
+  --spacing-space-6: 40px;
+  --spacing-space-7: 48px;
+  --spacing-space-8: 64px;
+  --spacing-space-9: 80px;
+  --spacing-space-10: 96px;
 }
 
 :root {
