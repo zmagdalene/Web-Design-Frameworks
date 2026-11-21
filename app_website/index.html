@@ -13,16 +13,16 @@
   <link rel="stylesheet" href="assets/app.css" />
 </head>
 
-<body class="bg-[url(/images/hero-2.webp)]">
-  <header>
-    <div class="w-full h-35 flex items-center  gap-auto bg-surface">
-      <div class="flex items-center pr-space-2">
+<body class="bg-[url('/images/homepage.png')] bg-[length:100%_100%] bg-center bg-no-repeat w-screen h-screen">
+  <header class="opacity-50">
+    <div class="flex justify-between items-start bg-primary py-space-3">
+      <div class="flex items-center pl-space-6">
         <img src="images/logo.svg" alt="logo">
         <h3 class="font-bold">Nav</h3>
         <h3>See</h3>
       </div>
 
-      <div class="flex items-center gap-space-8">
+      <div class="flex items-center gap-space-8 p-space-2">
         <div class="flex gap-space-9">
           <p>Explore</p>
           <p>Features</p>
@@ -37,7 +37,10 @@
     </div>
   </header>
 
-  <main>
+  <main class="grid grid-cols-12 hidden">
+    <section class="col-span-full">
+      <img src="images/hero.png" alt="hero" class="w-full h-[70vh]">
+    </section>
   </main>
 
   <footer>

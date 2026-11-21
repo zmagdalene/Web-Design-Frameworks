@@ -48,19 +48,17 @@
 @custom-variant theme-contrast (&:where([data-theme="contrast"] *));
 
 @theme {
-  --color-background: #e5efff;
-  --color-surface: #ffffff;
-  --color-foreground: #202833;
-  --color-muted-foreground: #52647a;
-  --color-primary: #2172f3;
-  --color-primary-dark: #005df0;
-  --color-primary-light: rgba(156, 194, 255, 0.50);
-  --color-accent: #FA6400;
+  --color-primary: #ffffff;
+  --color-primary-inverse: #202833;
+  --color-secondary: #000000;
+  --color-secondary-inverse: #ffffff;
+  --color-tertiary: #595959;
+  --color-accent: #fa6400;
   --color-border: #d5dce5;
   --color-text: #000000;
-  --color-text-muted: #262a30;
-  --color-black: #000000;
-  --color-text-white: #ffffff;
+  --color-text-muted: #595959;
+  --color-text-inverse: #ffffff;
+  --color-error: #ff0000;
 
   --spacing-space-1: 4px;
   --spacing-space-2: 8px;
@@ -72,6 +70,17 @@
   --spacing-space-8: 64px;
   --spacing-space-9: 80px;
   --spacing-space-10: 96px;
+}
+
+[data-theme="dark"] {
+  --color-primary: #202833;
+  --color-primary-inverse: #ffffff;
+  --color-secondary: #ffffff;
+  --color-secondary-inverse: #000000;
+  --color-tertiary: #969696;
+  --color-text: #ffffff;
+  --color-text-muted: #969696;
+  --color-text-inverse: #000000;
 }
 
 :root {
